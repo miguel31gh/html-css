@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens interativas html5</title>
+</head>
+<body>
+    <h1>Como trabalhar com imagens</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho no seu navegador</p>
+    <!-- Para poder fazer uma imagem se flexivel/interativa basta usar a tag picture e dentro dela usar duas tags, primeira a img que ira carregar a imagem principal, depois os sources que serão carregados de acordo com o width dado a eles-->
+        
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+      
+    <!-- Para colocar um audio no site é simples, no entanto tem que tomar cuidado para não deixar muito pesado. Para usar o audio temos dois modos o que é mais simples e um mais robuscado sendo mais elegivel. 1° apenas uasr a tag <audio>; o segundo modo é usar apenas a tag <audio> e dentro dela a tag <source'src'>, tambem usamos o (preload) que funciano como um carregamento adiantado tendo 3 tipos: auto, metadata e none dentre eles o melhor é a metadadta. Usamos controls para adicionar o controle de audio-->
+    
+    <h1>Como reproduzir audio em html5</h1>
+    <audio preload="metadata" controls>
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

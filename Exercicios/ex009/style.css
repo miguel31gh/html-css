@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'shiny';
+    src: url(fontes/super_shiny/Super\ Shiny.ttf);
+}
+@font-face {
+    font-family: 'old london';
+    src: url(fontes/old_london/OldLondon.ttf), url(fontes/old_london/Olondon_.otf);
+}
+@font-face {
+    font-family: 'Love larry';
+    src: url(fontes/love_larry/love\ larry\ ttf.ttf), 
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+/*
+    Formatos
+
+    - opentype(otf)
+    - truetype(ttf)
+    - embedded-opentype
+    - truetype-att(Apple advanced Typography)
+    - svg
+*/
+body{
+    
+    font-family: 'old london', Helvetica, sans-serif;
+    font-weight: lighter;
+}
+h1{
+    font-family: 'Love larry', Times, serif;
+    font-weight: lighter;
+    font-size: 3em;
+}
+h2{
+    font-family: 'shiny', times, serif;
+    font-weight: lighter;
+}

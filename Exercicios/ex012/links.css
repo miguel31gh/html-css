@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*
+    SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = psedudo-elements
+            >  = children
+
+*/
+body{
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+a:visited {
+    color: aqua;
+}
+a:hover {
+    text-decoration: underline;
+}
+.especial:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+.especial::before {
+    content: '>> ';
+    font-weight: lighter;
+}
+.especial::after {
+    content: ' <<';
+    font-weight: lighter;
+}
+
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    background-color: yellowgreen;
+    width: 200px;
+}
