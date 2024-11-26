@@ -3,4 +3,6 @@
 
  Estou aprendendo a usar o GitHub para poder criar sites e hospedalos
 
-<a href="https://miguel31gh.github.io/html-css/">
+<a href="[def]">
+
+[def]: ttps://miguel31gh.github.io/html-css
